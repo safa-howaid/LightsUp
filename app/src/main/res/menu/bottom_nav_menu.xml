@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_issue_log"
+        android:icon="@drawable/ic_hand_yellow_24dp"
+        android:title="@string/title_issue_log" />
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map_yellow_24dp"
+        android:title="@string/title_map" />
+
+    <item
+        android:id="@+id/navigation_learn_more"
+        android:icon="@drawable/ic_info_yellow_24dp"
+        android:title="@string/title_learn_more" />
+
+</menu>

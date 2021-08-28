@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LightsUp</string>
+    <string name="title_map">Map</string>
+    <string name="title_issue_log">Issue Log</string>
+    <string name="title_learn_more">Learn More</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2FmYS1ob3dhaWQiLCJhIjoiY2tvZ2JpbnBuMDltZTJ2cnQxeDNjd3V1cSJ9.JOFFKWlZRVxJcTkJIBsEKw</string>
+</resources>
