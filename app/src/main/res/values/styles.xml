@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomNavigationViewDark" parent="@style/MapboxStyleNavigationViewDark">
+        <!-- The main turn banner view at the top of the screen -->
+        <!-- Background color of the banner -->
+        <item name="navigationViewBannerBackground">@color/yellow_primary</item>
+        <!-- Color for the primary label that displays the turn name -->
+        <item name="navigationViewBannerPrimaryText">@color/black</item>
+        <!-- Color for the secondary label that occasionally appears underneath the primary label -->
+        <item name="navigationViewBannerSecondaryText">@color/black</item>
+        <!-- Primary color for the turn arrow icons-->
+        <item name="navigationViewBannerManeuverPrimary">@color/dark_grey</item>
+        <!-- Secondary color for the turn arrow icons (e.g. the line segment that forks off) -->
+        <item name="navigationViewBannerManeuverSecondary">@color/yellow_primary</item>
+        <!-- Alternate background color for the dropdown list of upcoming steps -->
+        <item name="navigationViewListBackground">@color/light_gray</item>
+
+        <!-- The summary view along the bottom of the screen -->
+        <!-- Background color of the summary view -->
+        <item name="navigationViewPrimary">@color/dark_grey</item>
+        <!-- Tint color for icons in the summary view -->
+        <item name="navigationViewSecondary">@color/yellow_accent</item>
+        <!-- Accent color for elements such as the recenter button -->
+        <item name="navigationViewAccent">@color/light_gray</item>
+        <!-- Color for the main duration label in the summary view -->
+        <item name="navigationViewPrimaryText">@color/light_gray</item>
+        <!-- Color for the secondary distance and ETA label in the summary view -->
+        <item name="navigationViewSecondaryText">@color/light_gray</item>
+
+        <!-- Custom colors for progress bars displayed during navigation -->
+        <item name="navigationViewProgress">@color/yellow_primary</item>
+        <item name="navigationViewProgressBackground">@color/yellow_accent</item>
+
+        <!-- Custom colors for the route line and traffic -->
+        <item name="navigationViewRouteStyle">@style/MapboxStyleNavigationMapRoute</item>
+
+        <!-- Map style -->
+        <item name="navigationViewMapStyle">mapbox://styles/mapbox/dark-v10</item>
+
+        <!-- Other components -->
+        <item name="navigationViewDivider">@color/yellow_primary</item>
+        <item name="navigationViewRouteOverviewDrawable">@color/white</item>
+        <item name="navigationViewDestinationMarker">@drawable/mapbox_marker_icon_default</item>
+        <item name="navigationViewLocationLayerStyle">@style/MapboxStyleNavigationLocationLayerStyle</item>
+    </style>
+</resources>
+

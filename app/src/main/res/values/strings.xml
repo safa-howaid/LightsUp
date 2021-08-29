@@ -4,6 +4,9 @@
     <string name="title_issue_log">Issue Log</string>
     <string name="title_learn_more">Learn More</string>
     <string name="mapbox_access_token">pk.eyJ1Ijoic2FmYS1ob3dhaWQiLCJhIjoiY2tvZ2JpbnBuMDltZTJ2cnQxeDNjd3V1cSJ9.JOFFKWlZRVxJcTkJIBsEKw</string>
+    <string name="msg_long_press_map_to_place_waypoint">Long press on the map to place a waypoint</string>
+    <string name="no_routes">No available routes to that destination</string>
+    <string name="route_request_failed">The route request failed</string>
     <!--Basic user location permission toasts-->
     <string name="user_location_permission_explanation">This app needs location permissions in order to show its functionality.</string>
     <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
