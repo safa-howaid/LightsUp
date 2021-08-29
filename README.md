@@ -3,8 +3,7 @@
 ## What is it?
 LightsUp is a navigation application that allows you the see the streetlights in your area so you can take the shortest well-lit path to your destination when it's dark. 
 LightsUp includes a feature to you to view logs from other uses describing which areas they did not feel safe in. You can also post about unsafe areas to warn others. We also provide helpful resources to learn more about the app, the problem and other informative resources.
-
-Figma Prototype link: https://www.figma.com/proto/Ch9OqnMvcnXi7e7OHTpATT/LightsUp?node-id=63%3A241&scaling=scale-down&page-id=22%3A2&starting-point-node-id=22%3A4
+[Figma Prototype](https://www.figma.com/proto/Ch9OqnMvcnXi7e7OHTpATT/LightsUp?node-id=22%3A4&scaling=scale-down&page-id=22%3A2&starting-point-node-id=22%3A4)
 
 ## Why we made it
 Our app idea was inspired by our own past experiences of feeling uncomfortable/unsure of travelling alone at night time.
@@ -26,7 +25,7 @@ LightsUp aims to make outdoor activities accessible for everyone. Our app addres
 - Mapbox Maps and Navigation SDKs
 
 ## To run the project
-- Install the latest version of Android Studio from here. https://developer.android.com/studio
+- Install the latest version of Android Studio from [here](https://developer.android.com/studio).
 - Clone this repository
-- Follow the steps here to create a Mapbox secret token
+- Follow the steps [here](https://docs.mapbox.com/android/maps/guides/install/#configure-credentials) to create a Mapbox secret token
     - Add the following line in `gradle.properties`: `MAPBOX_DOWNLOADS_TOKEN=PASTE_YOUR_SECRET_TOKEN_HERE`

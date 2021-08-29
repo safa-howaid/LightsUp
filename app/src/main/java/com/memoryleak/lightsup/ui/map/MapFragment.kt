@@ -121,15 +121,22 @@ class MapFragment : Fragment(), OnMapReadyCallback, PermissionsListener, MapboxM
             )!!
         )
 
-        // Add the Symbol Layer to display the destination marker
-        style.addLayer(
-            SymbolLayer("CLICK_LAYER", "CLICK_SOURCE")
-                .withProperties(
-                    iconImage("ICON_ID")
-                )
+        // Street Lights Layer
+        val vectorSource = VectorSource(
+            "lights-source",
+            "https://api.mapbox.com/v4/safa-howaid.bgp8x03h.json?access_token=" + getString(R.string.mapbox_access_token)
         )
+        style.addSource(vectorSource)
+        val circleLayer = CircleLayer("LIGHTS_LAYER_ID", "lights-source")
+        circleLayer.sourceLayer = "Street_Lights-3rqope"
+        circleLayer.withProperties(
+            circleOpacity(0.2f),
+            circleColor(parseColor("#FFC300")),
+            circleRadius(5f)
+        )
+        style.addLayer(circleLayer)
 
-        style.addLayer(
+        style.addLayerAbove(
             LineLayer("ROUTE_LAYER_ID", "ROUTE_LINE_SOURCE_ID")
                 .withProperties(
                     lineCap(LINE_CAP_ROUND),
@@ -143,7 +150,15 @@ class MapFragment : Fragment(), OnMapReadyCallback, PermissionsListener, MapboxM
                             stop(1f, color(parseColor(DESTINATION_COLOR)))
                         )
                     )
-                )
+                ), "LIGHTS_LAYER_ID"
+        )
+
+        // Add the Symbol Layer to display the destination marker
+        style.addLayerAbove(
+            SymbolLayer("CLICK_LAYER", "CLICK_SOURCE")
+                .withProperties(
+                    iconImage("ICON_ID")
+                ), "ROUTE_LAYER_ID"
         )
 
         // Add the click and route sources
@@ -155,23 +170,8 @@ class MapFragment : Fragment(), OnMapReadyCallback, PermissionsListener, MapboxM
             )
         )
 
-        // Street Lights Layer
-        val vectorSource = VectorSource(
-            "lights-source",
-            "https://api.mapbox.com/v4/safa-howaid.bgp8x03h.json?access_token=" + getString(R.string.mapbox_access_token)
-        )
-        style.addSource(vectorSource)
-        val circleLayer = CircleLayer("lights-style", "lights-source")
-        circleLayer.sourceLayer = "Street_Lights-3rqope"
-        circleLayer.withProperties(
-            circleOpacity(0.2f),
-            circleColor(parseColor("#FFC300")),
-            circleRadius(5f)
-        )
-        style.addLayer(circleLayer)
-
         mapboxMap.addOnCameraMoveListener {
-            val lightsLayer = style.getLayer("lights-style")
+            val lightsLayer = style.getLayer("LIGHTS_LAYER_ID")
             if (mapboxMap.cameraPosition.zoom > this.ZOOM_THRESHOLD) {
                 if (lightsLayer != null) {
                     circleLayer.setProperties(
