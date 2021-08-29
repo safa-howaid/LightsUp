@@ -3,7 +3,11 @@
 ## What is it?
 LightsUp is a navigation application that allows you the see the streetlights in your area so you can take the shortest well-lit path to your destination when it's dark. 
 LightsUp includes a feature to you to view logs from other uses describing which areas they did not feel safe in. You can also post about unsafe areas to warn others. We also provide helpful resources to learn more about the app, the problem and other informative resources.
+
 [Figma Prototype](https://www.figma.com/proto/Ch9OqnMvcnXi7e7OHTpATT/LightsUp?node-id=22%3A4&scaling=scale-down&page-id=22%3A2&starting-point-node-id=22%3A4)
+
+**DEMO**
+![demo](https://user-images.githubusercontent.com/58123610/131246048-b376cc1c-04fa-4c9d-bdb5-b6705abf58a8.gif)
 
 ## Why we made it
 Our app idea was inspired by our own past experiences of feeling uncomfortable/unsure of travelling alone at night time.
