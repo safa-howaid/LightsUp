@@ -7,6 +7,7 @@ LightsUp includes a feature to you to view logs from other uses describing which
 [Figma Prototype](https://www.figma.com/proto/Ch9OqnMvcnXi7e7OHTpATT/LightsUp?node-id=22%3A4&scaling=scale-down&page-id=22%3A2&starting-point-node-id=22%3A4)
 
 **DEMO**
+
 ![demo](https://user-images.githubusercontent.com/58123610/131246048-b376cc1c-04fa-4c9d-bdb5-b6705abf58a8.gif)
 
 ## Why we made it
