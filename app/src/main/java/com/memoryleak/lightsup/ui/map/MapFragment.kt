@@ -247,7 +247,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, PermissionsListener, MapboxM
 
     private fun toggleLayer() {
         mapboxMap.getStyle { style ->
-            val layer = style.getLayer("lights-style")
+            val layer = style.getLayer("LIGHTS_LAYER_ID")
             if (layer != null) {
                 if (Property.VISIBLE == layer.visibility.getValue()) {
                     layer.setProperties(visibility(Property.NONE))
